@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/galaxy.jpg);
+}
+.wrapper {
+	background-color: #9CCBEA;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+h1, h3, legend{ /*add fonts from the internet*/
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+/* formatting for paragraphs and the label with for id abtype and comments*/
+p, [for="abtype"], [for="comments"] {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+section { /*left side w questionare*/
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+aside { /*right side w address*/
+	flex-basis: 33%;
+}
+
+fieldset{ /*sections within questionare*/
+	border: 1px solid white;
+	border-radius: 20px;
+	margin-bottom:2rem;
+}
+
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+label {
+	display:block;
+	padding-bottom: .5rem;
+	border-bottom: 2px solid white;
+}
+
+/* apply this to inputs but not those with type radio orcheckbox , and apply to textarea*/
+input:not([type="radio"]):not([type="checkbox"]), textarea, select{
+	display:block;
+	margin: 1rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border:none; /*get rid of shadow effect on border*/
+}
+
+textarea{
+	height: 8rem;
+	padding: 1rem;
+}
+
+select {
+	font-size: 1rem;
+}
+
+button{
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	border-radius: 25px;
+	background-color: #DF8538;
+	padding: .5rem;
+}
+
+button:hover{
+	background-color:red;
+	border-color:red;
+}
+
+
+
+
+
+
+
+
+
+
